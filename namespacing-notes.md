@@ -22,7 +22,7 @@ $exampleStudent->lastName="Smith";
 var_dump($exampleStudent);
 
 ```
-In real world PHP applications most developers use a separate file for each PHP class they create. They then use include statement to load the file. Here's a simple example
+In real world PHP applications most developers use a separate file for each PHP class they create. They then use include statements to load the files. Here's a simple example
 
 ```php
 //film.php
@@ -83,7 +83,7 @@ $film->year=2015;
 var_dump($film);
 ```
 
-We use a backslash (\) to separate namespaces from class names. It is also possible to structure namespaces hierarchically, like folders and sub-folders. For example *Helpers\Validators\DateValidator.php*.
+We use a backslash (\\) to separate namespaces from class names. It is also possible to structure namespaces hierarchically, like folders and sub-folders. For example *Helpers\Validators\DateValidator.php*.
 
 ## The *Use* Statement
 If we need to refer to classes from the same namespace repeatedly, it can be tedious to constantly have to prefix class names with the namespace. 
@@ -100,7 +100,7 @@ $anotherFilm->title="The Room";
 $anotherFilm->year=2015;
 ```
 
-We can use the *use* statement to specify that we want to import the Film class from Models and use it in the current namespace.
+We can use the *use* statement to specify that we want to import the Film class from Models and use it in the current namespace. Then we no longer have to use the namespace when instantiating new objects.
 
 ```php
 use Models\Film; //use statement to import the Film class
@@ -118,7 +118,7 @@ $anotherFilm->year=2015;
 ```
 
 ### Using Namespaces
-Once we place a class in a namespace, it can only see code in the same namespace as itself. We don't automatically have access to classes from the global namespace. To show this here's a slightly more complex version of the Film class.
+Once we place a class in a namespace, it can only see code in the same namespace as itself. It doesn't automatically have access to classes from the global namespace. To show this here's a slightly more complex version of the Film class.
 
 ```php
 namespace Models;
@@ -188,6 +188,7 @@ If we create a directory structure that matches our namespacing, and we name all
 
 We define Film to be in the models namespace i.e.
 ```php
+//film.php
 namespace Models;
 
 class Film {
