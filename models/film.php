@@ -18,8 +18,5 @@ class Film {
 		$currentYear = $todaysDate->format("Y");
 		return $currentYear-$this->year;
 	}
-	function test(){
-		echo "test";
-	}
 }
 ?>
