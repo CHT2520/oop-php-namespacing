@@ -1,7 +1,7 @@
 # Organising classes, namespacing and autoloading
 
 ## Including classes
-So far when writing OOP PHP code we have placed the class definition and code that uses the class (client code) in the same file. Here's an example from the first practical session:
+So far when writing OOP PHP code we have placed the class definition and code that uses the class (client code) in the same file. Here's an example from the first OOP practical:
 ```php
 //class
 class Student{
