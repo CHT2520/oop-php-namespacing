@@ -207,7 +207,7 @@ spl_autoload_register();
 
 $film = new Film("Leave No Trace",2018,109);
 var_dump($film);
-echo "<p>{$film->getAge()}</p>";
+echo "<p>The film '{$film->title}' is {$film->getAge()} years old.</p>";
 ```
 
 This will work with more complex namespacing/folder structures as long as we obey the rules described above. 
